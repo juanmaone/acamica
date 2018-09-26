@@ -1,0 +1,69 @@
+
+
+.cartel {
+    height: 200px;
+    width: 300px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    text-align: center;
+    margin: auto;
+    /* para centrar elementos align block
+    podemos utilizar el margen*/
+    display: inline-block;
+}
+
+.claseBtnNo{
+  border: 10px  solid blue;
+  background-color: red;
+}
+
+.claseBtnYes{
+  border: 10px dotted yellow;
+  background-color: green;
+}
+
+.claseBtnPasta{
+  border: 10px dotted yellow;
+  background-color: yellow;
+}
+
+
+.claseBtnEnsalada{
+  border: 10px dashed green;
+  background-color: lightgreen;
+}
+
+
+.imgBtn{
+  width: 80px;
+  height: 80px;
+}
+.principal{
+  box-sizing: content-box;
+  background-color: #33AA18;
+  margin: 0 auto;
+  max-width: 650px;
+
+
+}
+
+/* borde 1 px
+2 borders diferentes
+rojo verde
+tama;o de ancho
+2 mesnajes 1 de exito 1 de error
+1 color verde otro color rojo
+1 titulo de cada mensaje
+
+ puede haber texto y m]as texto
+*/
+
+.nombreClase {
+  width: 100px;
+  heigh: 100px;
+  background: blue;
+  border: 15px dotted green;
+  padding: 20px ;
+  /* box sizing border box para DEFNIR EL TAMA;O TOTAL DEL OBJETO*/
+  box-sizing: border-box;
+}

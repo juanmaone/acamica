@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Demostración de Eventos Periódicos</title>
+</head>
+<body>
+  <h1>Contador de segundos HTML</h1>
+
+  <p>Usted está aquí desde hace aproximadamente <span class="contador">0</span> segundo(s)</p>
+
+  <!--
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+-->
+
+<button onclick="setTimeout(sayHello, 3000);">Probar</button>
+<button onclick="dispararIntervalo();">Probar</button>
+
+  <script>
+
+  function sayHello() {
+      alert('Hello');
+  }
+     var contador = 0;
+     function refrescarContador() {
+        $('.contador').html(contador);
+     }
+     function incrementarContador() {
+        contador++;
+     }
+     function mostrarMensaje() {
+       alert("sus mensajes se han enviado");
+     }
+     function dispararIntervalo(){
+       setInterval(function() {
+          incrementarContador();
+          refrescarContador();
+          mostrarMensaje();
+          sayHello();
+
+       }, 10000);
+     }
+
+     setInterval(function() {
+        incrementarContador();
+        refrescarContador();
+        mostrarMensaje();
+        sayHello();
+
+     }, 10000);
+  </script>
+</body>
+</html>

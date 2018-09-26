@@ -1,0 +1,47 @@
+
+
+.cartel {
+    height: 300px;
+    width: 500px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.claseBtnNo{
+  border: 10px  solid blue;
+  background-color: red;
+}
+
+.claseBtnYes{
+  border: 10px dotted yellow;
+  background-color: green;
+}
+
+
+.imgBtn{
+  width: 150px;
+  height: 150px;
+}
+
+/* borde 1 px
+2 borders diferentes
+rojo verde
+tama;o de ancho
+2 mesnajes 1 de exito 1 de error
+1 color verde otro color rojo
+1 titulo de cada mensaje
+
+ puede haber texto y m]as texto
+*/
+
+.nombreClase {
+  width: 100px;
+  heigh: 100px;
+  background: blue;
+  border: 15px dotted green;
+  padding: 20px ;
+  /* box sizing border box para DEFNIR EL TAMA;O TOTAL DEL OBJETO*/
+  box-sizing: border-box;
+}

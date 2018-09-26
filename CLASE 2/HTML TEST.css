@@ -1,0 +1,44 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+    font-size: 45px;
+    font-family: cursive;
+}
+.contenido{
+  background-color: yellow;
+}
+h3{
+  color: red;
+}
+
+.titulo {
+  color: black;
+}
+.parrafo{
+  padding: 30px ;
+  background: green;
+}
+
+.parrafo2{
+  /* PADDING ARRIBA DERECHA ABAJO IZQUIERDA*/
+  padding: 30px 20px 10px 5px ;
+  background: green;
+  border: 10px dotted black;
+  border-color: orange;
+  margin: 60px 5px 20px 40px;
+}
+
+.parrafo2{
+  /*VER PROPIEDADES DISPLAY CSS BLOCK inline*/
+  display:  grid;
+  /* PADDING ARRIBA DERECHA ABAJO IZQUIERDA*/
+  padding: 30px 20px 10px 5px ;
+  background: green;
+  border: 10px dotted black;
+  border-color: orange;
+  margin: 60px 5px 20px 40px;
+}
