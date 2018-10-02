@@ -1,0 +1,41 @@
+.recuadro {
+    max-width: 600px;
+    text-align: center;
+    margin: 50px auto 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 3px solid #000;
+    border-radius: 15px;
+    padding: 45px;
+    background-color: #99ffe6;
+}
+
+.titulo {
+    margin: 0 0 30px;
+}
+
+.titulo:hover,
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #3399ff;
+    padding: 25px 70px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    border-radius: 13px;
+}
+
+.recuadroAlterado {
+    background-color: yellow;
+    border-style: dotted;
+
+}
+
+.recuadroVolado {
+    background-color: green;
+    border-style: hidden;
+    
+}

@@ -1,0 +1,36 @@
+/*HOJA DE ESTILOS CV JUAN MARTÍN FUNES
+ACAMICA
+Proyecto:CV
+Perteneciente a: CURSO FULL STACK DEVELOPER
+*/
+
+body{
+    background-color: #f9f8eb;
+}
+
+h2 {
+    color: #499176;
+    font-size: 20pt;
+}
+
+h3 {
+    font-family: 'Archivo Black', sans-serif;
+    color: #76b39d; 
+    font-size: 17pt;
+}
+
+h4 {
+    
+}
+/* clases */
+
+
+.head {
+    background-color: #76b39d;
+}
+
+.clientes img{
+    max-width: 200px;
+    max-height: 200px;
+    
+}
