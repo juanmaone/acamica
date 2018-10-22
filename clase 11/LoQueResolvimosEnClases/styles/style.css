@@ -1,0 +1,23 @@
+.container {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+#numero {
+  font-size: 50px;
+  width: 500px;
+}
+
+#boton {
+  font-size: 50px;
+  border-radius: 5px;
+  color: #00559f;
+  background-color: #8fd325;
+  outline: 0;
+  border: 2px solid #000;
+}
+
+#boton:hover {
+  cursor: pointer;
+}

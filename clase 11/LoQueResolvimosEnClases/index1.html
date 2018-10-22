@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <input type="number" value="Ingrese un número aquí" id="numero1">
+        <input type="number" value="Ingrese un número aquí" id="numero2">
+        <br>
+        <button type="button" id="boton" onclick="procesar2()">Procesar número</button>
+        <button type="button" id="btnSuma" onclick="suma()">Sumar</button>
+        <button type="button" id="btnResta" onclick="resta()">Restar</button>
+        <input type="text" value="" id="resultado" disabled="true">
+        <p id="demo"></p>
+
+        <input type="number" value="stock actual" id="stockActual">
+        <br>
+        <input type="number" value="Cantidad de Cajas" id="cantidadDeCajas">
+        <br>
+        <button type="button" id="btnStock" onclick="sumarStock()">SUMAR STOCK</button>
+        <br>
+        <button type="button" id="btnRestarStock" onclick="restarStock()">RESTAR STOCK</button>
+    </div>
+    <script src="scripts/script1.js"></script>
+</body>
+</html>

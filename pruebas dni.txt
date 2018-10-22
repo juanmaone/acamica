@@ -1,0 +1,10 @@
+00139581796@FUNES@JUAN MARTIN@M@31057123@A@20/09/1984@01/10/2012
+
+
+00210922800@FERNANDEZ@PAULA GABRIELA@F@21104762@B@24/11/1969@07/08/2013
+	   1          2             3  4       5  6         7	
+
+apellido
+nombre
+dni
+fechaNacimiento

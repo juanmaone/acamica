@@ -4,34 +4,34 @@
 
 //DECLARACIÓN DE VARIABLES
 
-var nombreUsuario='juanma';
+var nombreUsuario = 'juanma';
 var saldoCuenta = 250000;
-var limiteExtraccion=20000;
+var limiteExtraccion = 20000;
 
 //Funciones
 /*extraerDinero
-depositarDinero
-pagarServicio
-transferirDinero
-cambiarLimiteDeExtraccion
+    depositarDinero
+    pagarServicio
+    transferirDinero
+    cambiarLimiteDeExtraccion
 */
 
-function extraerDinero(){
+function extraerDinero() {
 
 }
 
-function depositarDinero(){
+function depositarDinero() {
 
 }
 
-function pagarServicio(){
+function pagarServicio() {
 
 }
 
-function transferirDinero(){
+function transferirDinero() {
 
 }
 
-function cambiarLimiteDeExtraccion(){
+function cambiarLimiteDeExtraccion() {
 
 }

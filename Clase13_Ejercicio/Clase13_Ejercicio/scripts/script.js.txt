@@ -1,0 +1,61 @@
+/* Funciones del ejercicio 1 */
+
+function crearRombo(color) {
+  /* Completar código */
+}
+
+function crearCuadrado(color) {
+  /* Completar código */
+}
+
+function crearTriangulo(color) {
+  /* Completar código */
+}
+
+function crearCirculo(color) {
+  /* Completar código */
+}
+
+function crearCorazon(color) {
+  /* Completar código */
+}
+
+function crearPica(color) {
+  /* Completar código */
+}
+
+function crearDiamante(color) {
+  /* Completar código */
+}
+
+function crearTrebol(color) {
+  /* Completar código */
+}
+
+/* Ejercicio 2 */
+function agregarInfo(informacion) {
+  /* Completar código */
+}
+
+/* Código necesario para darle funcionalidad a los botones de la página */
+var ingresarInfo = document.getElementById('ingresar-info');
+ingresarInfo.addEventListener('click', cargarFormas);
+
+var botonProcesarInfo = document.getElementById('procesar-info');
+botonProcesarInfo.addEventListener('click', procesarInfo);
+
+/* Ejercicio 3 */
+function cargarFormas() {
+  var forma = prompt("Ingresa la forma a dibujar:", "");
+  var color = prompt("Ingresa su color:", "");
+  /* Completar código */
+}
+
+/* Ejercicio 5 */
+function procesarInfo() {
+  /*
+    Realizar todas las llamadas que consideres necesarias a agregarInfo aquí
+   */
+  var botonProcesarInfo = document.getElementById('procesar-info');
+  botonProcesarInfo.classList.add('ocultar');
+}

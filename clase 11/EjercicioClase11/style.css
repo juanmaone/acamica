@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'just_another_handregular';
+    src: url('justanotherhand-regular-webfont.woff2') format('woff2'),
+         url('justanotherhand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'happy_monkeyregular';
+    src: url('happymonkey-regular-webfont.woff2') format('woff2'),
+         url('happymonkey-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.boleta {
+    max-width: 1000px;
+    text-align: center;
+    margin: 50px auto 0;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.encabezado {
+    font-family: 'just_another_handregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 150px;
+}
+
+.encabezado__parte-izquierda {
+    float: left;
+    width: 68%;
+    color: #f00;
+    text-align: center;
+    font-size: 140px;
+}
+
+.encabezado__parte-derecha {
+    float: right;
+    width: 28%;
+    padding: 10px;
+}
+
+.sello {
+    border: 4px solid #000;
+}
+
+.sello__primer-renglon,
+.sello__segundo-renglon,
+.sello__tercer-renglon {
+    display: block;
+    font-size: 32px;
+}
+
+.sello__primer-renglon,
+.sello__segundo-renglon,
+.sello__tercer-renglon {
+    color: #000;
+    background-color: #fff;
+}
+
+.sello__segundo-renglon {
+    color: #fff;
+    background-color: #000;
+}
+
+.ingreso-de-stock,
+.egreso-de-stock {
+    padding: 20px;
+    font-family: 'happy_monkeyregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100px;
+}
+
+.ingreso-de-stock {
+    color: #fff;
+    background-color: #000;
+}
+
+.egreso-de-stock {
+    color: #000;
+    background-color: #0ff;
+}
+
+.ingreso-de-stock h2,
+.egreso-de-stock h2 {
+    font-size: 48px;
+    text-align: left;
+    margin: 0;
+    float: left;
+    line-height: 1;
+    padding-left: 55px;
+}
+
+.ingreso-de-stock .descripcion,
+.egreso-de-stock .descripcion {
+    color: #000;
+    width: 48%;
+    float: right;
+    background-color: #fff;
+    width: 48%;
+    font-size: 17px;
+    border-radius: 8px;
+    float: right;
+    height: 90px;
+    text-align: left;
+    padding: 10px 10px 0;
+    box-sizing: border-box;
+}
