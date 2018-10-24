@@ -20,7 +20,7 @@ window.onload = function () {
 }
 
 
-//Funciones que tenes que completar
+
 function cambiarLimiteDeExtraccion() {
     var nuevoLimite = parseInt(prompt("Ingrese el nuevo límite de extracción"));
 
@@ -36,7 +36,7 @@ function extraerDinero() {
     if (validarExtraccion(dineroExtraido)) {
         restarDinero(dineroExtraido);
         alert("Ha extraido:  $" + dineroExtraido + "\n Saldo Anterior: $" + saldoAux + "\n Saldo Actual: $" + saldoCuenta);
-        actualizarSaldoEnPantalla();
+        
     }
 
 }
@@ -60,9 +60,11 @@ function validarExtraccion(dineroExtraido) {
 
 function restarDinero(dineroExtraido) {
     saldoCuenta -= dineroExtraido;
+    actualizarSaldoEnPantalla();
 }
 function sumarDinero(dineroDepositado) {
     saldoCuenta += dineroDepositado;
+    actualizarSaldoEnPantalla();
 }
 
 function depositarDinero() {
@@ -72,10 +74,13 @@ function depositarDinero() {
     sumarDinero(dineroDepositado);
     alert("Ha depositado:  $" + dineroDepositado + "\n Saldo Anterior: $" + saldoAux + "\n Saldo Actual: $" + saldoCuenta);
 
-    actualizarSaldoEnPantalla();
+    
 }
 function promptIntMayor0(msg) {
     var valorIngresado = parseInt(prompt(msg));
+    if(valorIngresado=""){
+        alert("Error: No ha ingresado ningún caracter");
+    }
     if (typeof valorIngresado !== 'number') {
         alert("Error debe ingresar un nùmero");
     }
@@ -97,7 +102,7 @@ function pagarServicio() {
             nombreServicios.splice((servicio - 1), 1);
             precioServicios.splice((servicio - 1), 1);
 
-            actualizarSaldoEnPantalla();
+            
         } else {
             alert("Su cuenta no dispone de saldo suficiente para la operación");
         }
@@ -117,7 +122,7 @@ function transferirDinero() {
 
     if (cuentasAmigas.includes(cuentaATransferir)) {
         restarDinero(montoATransferir);
-        actualizarSaldoEnPantalla();
+        
         alert("Se ha transferido " + montoATransferir + " \n a la cuenta " + cuentaATransferir);
 
     } else {
@@ -130,7 +135,7 @@ function transferirDinero() {
 function iniciarSesion() {
     var codigo = prompt("Ingrese su código de usuario");
     var validado = false;
-    if (codigo != codigoUsuario) {
+    if (codigo !== codigoUsuario) {
         saldoCuenta = 0;
         alert('Código incorrecto: Tu dinero ha sido retenido por cuestiones de seguridad');
     } else {

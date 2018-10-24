@@ -1,4 +1,4 @@
-/* Funciones del ejercicio 1 */
+
 //variables globales
 var rombos = 0, cuadrados = 0, circulos = 0, picas = 0, triangulos = 0,
     totalFormas = 0, corazones = 0, diamantes = 0, treboles = 0;
@@ -148,7 +148,7 @@ function cargarFormas() {
     var forma = prompt("Ingresa la forma a dibujar:", "");
     var color = prompt("Ingresa su color:", "");
     var formaSolicitada;
-    console.log(1);
+    
     switch (forma) {
         case "rombo":
             formaSolicitada = crearRombo(color);
@@ -184,11 +184,11 @@ function cargarFormas() {
             break;
 
         default:
-            console.log(3);
+            console.log("Default ");
             break;
     }
 
-    var columna;
+    var columna ="";
   
     switch (color) {
 
