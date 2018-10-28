@@ -20,25 +20,24 @@ window.onload = function () {
 }
 
 
-
 function cambiarLimiteDeExtraccion() {
     var nuevoLimite = parseInt(prompt("Ingrese el nuevo límite de extracción"));
-
     limiteExtraccion = nuevoLimite;
     actualizarLimiteEnPantalla();
     alert("Se ha modificado su límite de extracción, ahora es " + limiteExtraccion);
 }
 
 function extraerDinero() {
-    var dineroExtraido = parseInt(prompt("Dinero a Extraer"));
-    var saldoAux = saldoCuenta;
+    //  var dineroExtraido = parseInt(prompt("Dinero a Extraer"));
+    var dineroExtraido = promptIntMayor0("Dinero a Extraer");
+    //si no es cero sigue
+    if (dineroExtraido !== 0)
+        var saldoAux = saldoCuenta;
 
     if (validarExtraccion(dineroExtraido)) {
         restarDinero(dineroExtraido);
         alert("Ha extraido:  $" + dineroExtraido + "\n Saldo Anterior: $" + saldoAux + "\n Saldo Actual: $" + saldoCuenta);
-        
     }
-
 }
 
 function validarExtraccion(dineroExtraido) {
@@ -68,24 +67,24 @@ function sumarDinero(dineroDepositado) {
 }
 
 function depositarDinero() {
-
     var dineroDepositado = parseInt(prompt("Dinero a depositar"));
     var saldoAux = saldoCuenta;
     sumarDinero(dineroDepositado);
     alert("Ha depositado:  $" + dineroDepositado + "\n Saldo Anterior: $" + saldoAux + "\n Saldo Actual: $" + saldoCuenta);
-
-    
 }
+
 function promptIntMayor0(msg) {
-    var valorIngresado = parseInt(prompt(msg));
-    if(valorIngresado=""){
+    var valorIngresado = prompt(msg);
+    if (valorIngresado == "") {
         alert("Error: No ha ingresado ningún caracter");
-    }
-    if (typeof valorIngresado !== 'number') {
+    } else if (typeof valorIngresado !== 'number') {
         alert("Error debe ingresar un nùmero");
+        if (valorIngresado <= 0)
+            alert("Error debe ingresar un nùmero mayor a cero");
     }
     return valorIngresado;
 }
+
 function pagarServicio() {
     var msgServicios = "Ingrese el número que corresponde con el servicio que quiere pagar \n";
     for (var i = 1; i < nombreServicios.length + 1; i++) {
@@ -101,8 +100,6 @@ function pagarServicio() {
             alert("El servicio " + nombreServicios[(servicio - 1)] + " se ha pagado.");
             nombreServicios.splice((servicio - 1), 1);
             precioServicios.splice((servicio - 1), 1);
-
-            
         } else {
             alert("Su cuenta no dispone de saldo suficiente para la operación");
         }
@@ -119,19 +116,15 @@ function transferirDinero() {
     }
     //ingresar cuenta y verificar que sea amiga
     var cuentaATransferir = parseInt(prompt("Ingrese el nùmero de la cuenta "));
-
     if (cuentasAmigas.includes(cuentaATransferir)) {
         restarDinero(montoATransferir);
-        
         alert("Se ha transferido " + montoATransferir + " \n a la cuenta " + cuentaATransferir);
-
     } else {
         alert("La cuenta a transferir debe ser una cuenta agendada");
     }
-
 }
 
-
+//función  login
 function iniciarSesion() {
     var codigo = prompt("Ingrese su código de usuario");
     var validado = false;

@@ -8,3 +8,7 @@ apellido
 nombre
 dni
 fechaNacimiento
+
+numero apellido nombre sexo dni extra
+
+switch (variableAEvaluar)

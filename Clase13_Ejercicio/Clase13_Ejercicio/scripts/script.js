@@ -236,6 +236,7 @@ function procesarInfo() {
     agregarInfo("Corazones " + corazones);
     agregarInfo("Picas " + picas);
     agregarInfo("Total formas " + totalFormas);
+    agregarInfo("Total formas child " + (columna1+columna2+columna3));
 
 
 
