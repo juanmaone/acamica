@@ -28,10 +28,8 @@ function cambiarLimiteDeExtraccion() {
 }
 
 function extraerDinero() {
-    //  var dineroExtraido = parseInt(prompt("Dinero a Extraer"));
-    var dineroExtraido = promptIntMayor0("Dinero a Extraer");
-    //si no es cero sigue
-    if (dineroExtraido !== 0)
+     var dineroExtraido = parseInt(prompt("Dinero a Extraer"));
+        if (dineroExtraido !== 0)
         var saldoAux = saldoCuenta;
 
     if (validarExtraccion(dineroExtraido)) {
@@ -71,18 +69,6 @@ function depositarDinero() {
     var saldoAux = saldoCuenta;
     sumarDinero(dineroDepositado);
     alert("Ha depositado:  $" + dineroDepositado + "\n Saldo Anterior: $" + saldoAux + "\n Saldo Actual: $" + saldoCuenta);
-}
-
-function promptIntMayor0(msg) {
-    var valorIngresado = prompt(msg);
-    if (valorIngresado == "") {
-        alert("Error: No ha ingresado ningún caracter");
-    } else if (typeof valorIngresado !== 'number') {
-        alert("Error debe ingresar un nùmero");
-        if (valorIngresado <= 0)
-            alert("Error debe ingresar un nùmero mayor a cero");
-    }
-    return valorIngresado;
 }
 
 function pagarServicio() {
