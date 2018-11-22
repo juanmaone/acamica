@@ -1,0 +1,17 @@
+ var notas= [['JUAN',8],
+             ['JOSE',7],
+             ['SOFIA',5],
+             ['LUANA',3]
+            ];
+
+
+function mostrarNotas(){
+    for (var i=0;i<notas.length;i++){
+       if(notas[i][1]>=6){
+           console.log('La nota de '+notas[i][0]+'es '+nota[i][]+' APROBADA');
+       } else {
+           console.log('La nota de '+notas[i][0]+'es '+nota[i][]+' DESAPROBADA ');
+       }
+
+    }
+}
